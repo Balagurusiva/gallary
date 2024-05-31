@@ -1,6 +1,8 @@
 <template>
-	<div class="w-full sm:px-[50px] z-50">
-		<div class="header">
+	<div class="w-full">
+		<div
+			class="header sticky top-0 w-full bg-white sm:px-[50px] "
+		>
 			<div class="logo">
 				<NuxtImg src="/Kx1rLCnLKU4d4cD7viBNCJUbSbQpkU3HIpEeP4U0.png" />
 			</div>
@@ -22,20 +24,22 @@
 					class="absolute w-full h-[100%] top-0"
 					style="background-color: rgba(255, 255, 255, 1) !important"
 				>
-					<div class="logo mt-[10px] flex items-center ml-[20px] xl:ml-[50px]">
-						<NuxtImg src="/Kx1rLCnLKU4d4cD7viBNCJUbSbQpkU3HIpEeP4U0.png" />
-					</div>
-                    <div class="fixed right-2 top-5" @click="handleClose">
-							<NuxtImg
-								src="circle-xmark.svg"
-								width="20"
-								height="20" 
-							/>
+					<div
+						class="header sticky top-0 w-full sm:px-[50px]   h-[85px]"
+					>
+						<div class="logo mt-2 ml-2">
+							<NuxtImg src="/Kx1rLCnLKU4d4cD7viBNCJUbSbQpkU3HIpEeP4U0.png" />
 						</div>
-					<div class="flex justify-between items-center sm:px-[50px] sm:pb-[50px]">
+					</div>
+					<div class="fixed right-2 top-8" @click="handleClose">
+						<NuxtImg src="circle-xmark.svg" width="20" height="20" />
+					</div>
+					<div
+						class="flex justify-between items-center sm:mt-[-50px]  sm:px-[50px] sm:pb-[50px]"
+					>
 						<div
-                            class="sm:ml-[20px]"
-							style="left: 0;; z-index: 1 !important"
+							class="sm:ml-[20px]"
+							style="left: 0; z-index: 1 !important"
 							@click="handlePrevious"
 						>
 							<NuxtImg src="angle-double-left.svg" width="20" height="20" />
@@ -65,15 +69,15 @@
 	let currentid = ref(0);
 	let currentImg = ref();
 
-	const clicked = (img, id) => { 
+	const clicked = (img, id) => {
 		currentid.value = id;
 		showLarge.value = true;
 		currentImg.value = img;
 	};
 
-    const handleClose = () => {
-        showLarge.value=false
-    }
+	const handleClose = () => {
+		showLarge.value = false;
+	};
 
 	const handleNext = () => {
 		if (currentid.value < imgs.length - 1) {
@@ -102,10 +106,14 @@
 	.logo {
 		width: calc(50px + (81 / (1024 - 350)) * (100vw - 350px));
 		height: calc(40px + (40 / (1024 - 350)) * (100vh - 350px));
+		object-fit: contain;
 		max-width: 131px;
 		max-height: 80px;
 		min-width: 50px;
 		min-height: 40px;
 		transition: width 0.3s ease, height 0.3s ease;
 	}
+
+     
+
 </style>
