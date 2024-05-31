@@ -35,7 +35,7 @@
 						<NuxtImg src="circle-xmark.svg" width="20" height="20" />
 					</div>
 					<div
-						class="flex justify-between items-center sm:mt-[-50px]  sm:px-[50px] sm:pb-[50px]"
+						class="flex justify-between items-center sm:mt-[-20px]  sm:px-[50px] sm:pb-[50px]"
 					>
 						<div
 							class="sm:ml-[20px]"
@@ -47,7 +47,7 @@
 						<div class="flex items-center justify-center">
 							<NuxtImg
 								:src="currentImg"
-								class="w-[80%] h-[600px] object-contain rounded-[20px] overflow-clip"
+								class="w-full h-[550px] object-cover rounded-[20px] overflow-clip"
 							/>
 						</div>
 						<div @click="handleNext">
