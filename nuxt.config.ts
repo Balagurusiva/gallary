@@ -4,6 +4,11 @@ export default defineNuxtConfig({
 	routeRules: {
 		"/": { isr: 600 },
 	},
+    app: {
+    head: {
+       title:"Relaxaa Gallary"
+    }
+  },
 	devtools: { enabled: false },
 	modules: ["@nuxt/image", "@nuxtjs/tailwindcss"],
 	css: ["~/assets/css/main.css"],
