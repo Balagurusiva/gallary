@@ -1,7 +1,7 @@
 <template>
-	<div class="w-full xl:px-[50px] z-50">
+	<div class="w-full sm:px-[50px] z-50">
 		<div class="header">
-			<div class="logo ml-[20px] sm:ml-[50px]">
+			<div class="logo">
 				<NuxtImg src="/Kx1rLCnLKU4d4cD7viBNCJUbSbQpkU3HIpEeP4U0.png" />
 			</div>
 		</div>
@@ -22,7 +22,7 @@
 					class="absolute w-full h-[100%] top-0"
 					style="background-color: rgba(255, 255, 255, 1) !important"
 				>
-					<div class="logo flex items-center ml-[20px] xl:ml-[50px]">
+					<div class="logo mt-[10px] flex items-center ml-[20px] xl:ml-[50px]">
 						<NuxtImg src="/Kx1rLCnLKU4d4cD7viBNCJUbSbQpkU3HIpEeP4U0.png" />
 					</div>
                     <div class="fixed right-2 top-5" @click="handleClose">
