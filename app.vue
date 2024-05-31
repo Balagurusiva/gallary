@@ -20,18 +20,25 @@
 			<template v-if="showLarge">
 				<div
 					class="absolute w-full h-[100%] top-0"
-					style="background-color: rgba(255, 255, 255, 0.9) !important"
+					style="background-color: rgba(255, 255, 255, 1) !important"
 				>
-					<div class="logo ml-[20px] sm:ml-[50px]">
+					<div class="logo flex items-center ml-[20px] xl:ml-[50px]">
 						<NuxtImg src="/Kx1rLCnLKU4d4cD7viBNCJUbSbQpkU3HIpEeP4U0.png" />
 					</div>
+                    <div class="fixed right-2 top-5" @click="handleClose">
+							<NuxtImg
+								src="circle-xmark.svg"
+								width="20"
+								height="20" 
+							/>
+						</div>
 					<div class="flex justify-between items-center sm:px-[50px] sm:pb-[50px]">
 						<div
                             class="sm:ml-[20px]"
 							style="left: 0;; z-index: 1 !important"
 							@click="handlePrevious"
 						>
-							<NuxtImg src="angle-double-left.svg" width="30" height="30" />
+							<NuxtImg src="angle-double-left.svg" width="20" height="20" />
 						</div>
 						<div class="flex items-center justify-center">
 							<NuxtImg
@@ -42,8 +49,8 @@
 						<div @click="handleNext">
 							<NuxtImg
 								src="angle-double-left.svg"
-								width="30"
-								height="30"
+								width="20"
+								height="20"
 								style="transform: rotate(180deg)"
 							/>
 						</div>
@@ -58,12 +65,15 @@
 	let currentid = ref(0);
 	let currentImg = ref();
 
-	const clicked = (img, id) => {
-		console.log(img);
+	const clicked = (img, id) => { 
 		currentid.value = id;
 		showLarge.value = true;
 		currentImg.value = img;
 	};
+
+    const handleClose = () => {
+        showLarge.value=false
+    }
 
 	const handleNext = () => {
 		if (currentid.value < imgs.length - 1) {
