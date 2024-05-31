@@ -9,7 +9,7 @@
 		</div>
 		<div class="flex justify-center items-center mt-[50px] gap-5 flex-wrap">
 			<template v-for="(image, index) in imgs" :key="index">
-				<div class="rounded-[10px] overflow-hidden">
+				<div class="rounded-[10px] overflow-hidden img-list "  >
 					<NuxtImg
 						:src="image"
 						width="150"
@@ -113,6 +113,11 @@
 		min-height: 40px;
 		transition: width 0.3s ease, height 0.3s ease;
 	}
+
+    .img-list:hover{
+        transform: rotate(2deg);
+        transition:  0.3s  all ease-in-out ;
+    }
 
      
 
