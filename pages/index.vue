@@ -114,7 +114,7 @@
 	}
 
 	img:hover {
-		scale: 1.5;
+		scale: 1.2;
 		transition: all 0.5s ease;
 	}
 </style>
