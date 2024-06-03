@@ -22,7 +22,7 @@
 			<template v-for="(image, index) in imgs" :key="index">
 				<NuxtLink :to="image.link" class="flex justify-center">
 					<div
-						class="card relative w-[90%] sm:w-[200px] h-[350px] sm:h-[200px] rounded-2xl overflow-clip"
+						class="card relative drop-shadow-xl w-[90%] sm:w-[250px] h-[350px] sm:h-[250px] rounded-2xl overflow-clip"
 					>
 						<div class="event-img w-full object-contain">
 							<NuxtImg
