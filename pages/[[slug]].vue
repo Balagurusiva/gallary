@@ -64,4 +64,10 @@
         scale: 1.2;
         transition: all 0.8s ease;
     }
+    @media (max-width: 820px) {
+  .image-container {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
 </style>
