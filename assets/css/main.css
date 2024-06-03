@@ -8,12 +8,15 @@ body{
 }
 
 .logo {
-		width: calc(50px + (81 / (1024 - 350)) * (100vw - 350px));
-		height: calc(40px + (40 / (1024 - 350)) * (100vh - 350px));
+     
+		width: calc(50px + (81 / (1024 - 450)) * (100vw - 350px));
+		height: calc(40px + (40 / (1024 - 450)) * (100vh - 350px));
 		object-fit: contain;
 		max-width: 110px;
 		max-height: 65px;
-		min-width: 50px;
-		min-height: 40px;
+		min-width: 70px;
+		min-height: 50px;
 		transition: width 0.3s ease, height 0.3s ease;
+         
+        
 	}

@@ -3,11 +3,11 @@
 
 	<div class="w-full h-full flex flex-col items-center bg-[#f9f3ff]">
 		<!-- header section -->
-		<header class="header sticky top-0 flex pt-[5px] items-center sm:items-baseline justify-center   w-full  bg-[#f9f3ff]" >
-            <div class="logo">
+		<header class="header z-20  sticky top-0 flex flex-col md:flex-row pt-[5px]  items-center sm:items-baseline justify-center   w-full  bg-[#f9f3ff]" >
+            <div class="logo w-[20%] ml-[30px]">
 				<NuxtImg src="/Kx1rLCnLKU4d4cD7viBNCJUbSbQpkU3HIpEeP4U0.png" />
 			</div>
-			<div>
+			<div class="w-[80%] flex justify-center md:ml-[-10%]">
 				<p class="text-[18px] sm:text-[32px] xl:text-[32px] font-extrabold font-serif text-[#7F5E9F]" >
 					Moments Captured in Time
 				</p>
@@ -20,7 +20,7 @@
 			class="mt-[40px] flex flex-col sm:flex-row sm:flex-wrap gap-4 w-[90%] xl:w-[70%]"
 		>
 			<template v-for="(image, index) in imgs" :key="index">
-				<NuxtLink :to="image.link">
+				<NuxtLink :to="image.link" class="flex justify-center">
 					<div
 						class="card relative w-[90%] sm:w-[200px] h-[350px] sm:h-[200px] rounded-2xl overflow-clip"
 					>
@@ -110,7 +110,7 @@
 		transform: rotate(2deg);
 	}
 
-	img:hover {
+	.event-img > img:hover {
 		scale: 1.2;
 		transition: all 0.5s ease;
 	}
