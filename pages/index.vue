@@ -17,19 +17,19 @@
 
 		<!-- main content -->
 		<main
-			class="mt-[40px] flex flex-col sm:flex-row sm:flex-wrap gap-4 w-[90%] xl:w-[70%]"
+			class="mt-[40px] flex flex-col sm:flex-row sm:flex-wrap gap-4 w-[90%] xl:w-[75%]"
 		>
 			<template v-for="(image, index) in imgs" :key="index">
 				<NuxtLink :to="image.link" class="flex justify-center">
 					<div
-						class="card relative drop-shadow-xl w-[90%] sm:w-[250px] h-[350px] sm:h-[250px] rounded-2xl overflow-clip"
+						class="card relative drop-shadow-xl w-[90%] sm:w-[225px] h-[350px] sm:h-[250px] rounded-2xl overflow-clip"
 					>
-						<div class="event-img w-full object-contain">
+						<div class="event-img w-full object-cover">
 							<NuxtImg
 								:src="image.img"
 								@click="clicked(image, index)"
 								style="width: inherit; height: inherit"
-								class="object-fit"
+								class="object-contain"
 							/>
 						</div>
 						<div
@@ -47,34 +47,7 @@
 </template>
 
 <script setup>
-	let currentid = ref(0);
-	let currentImg = ref();
-
-	const clicked = (img, id) => {
-		currentid.value = id;
-		showLarge.value = true;
-		currentImg.value = img;
-	};
-
-	const handleClose = () => {
-		showLarge.value = false;
-	};
-
-	const handleNext = () => {
-		if (currentid.value < imgs.length - 1) {
-			currentImg.value = imgs[++currentid.value];
-		}
-	};
-
-	const handlePrevious = () => {
-		if (currentid.value > 0) {
-			currentImg.value = imgs[--currentid.value];
-		}
-	};
-
-	const showLarge = ref(false);
  
-
 	const imgs = [
 		{
 			img: "/IMG-20240530-WA0019.jpg",
@@ -82,7 +55,7 @@
 			link: "/dubai-fashion-runway",
 		},
 		{
-			img: "/IMG-20240530-WA0020.jpg",
+			img: "/taj-event.jpg",
 			event_name: "Product Launch-Taj Chennai ",
 			link: "/product-launch-taj-chennai",
 		},
