@@ -1,48 +1,4 @@
-<!-- <template> 
-			<div class="image-flex w-[75%]">
-				<div class="image-container" v-for="img in imgs" :key="img">
-					<NuxtImg :src="img" :alt="image" />
-				</div>
-			</div> 
-</template>
-
  
-
-<style scoped>
-	.image-flex {
-		display: flex;
-		flex-wrap: wrap;
-		gap: 20px;
-	}
-
-	.image-container {
-        @apply drop-shadow-xl;
-		flex: 1 1 calc(33.333% - 0px);
-		max-width: calc(33.333% - 20px);
-		box-sizing: border-box;
-        border-radius: 8px;
-        overflow: clip; 
-        
-	}
-
-	.image-container img {
-		width: 100%;
-		height: 100%;
-        min-height: 400px;
-		object-fit: cover;
-	}
-
-    .image-container img:hover{
-        scale: 1.2;
-        transition: all 0.8s ease; 
-    }
-    @media (max-width: 820px) {
-  .image-container {
-    flex: 1 1 100%;
-    max-width: 100%;
-  }
-}
-</style> -->
 
 <template>
 	<header
@@ -80,8 +36,7 @@
 	</div>
 </template>
 
-<script setup>
-	import taj_imgs from "~/public/product-launch-taj-chennai";
+<script setup> 
 
 	const route = useRoute();
 	const imgs = ref();
