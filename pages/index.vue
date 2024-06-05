@@ -3,13 +3,13 @@
 
 	<div class="w-full h-full flex flex-col items-center bg-[#f9f3ff]">
 		<!-- header section -->
-		<header class="header z-20  sticky top-0 flex flex-col md:flex-row pt-[5px]  items-center sm:items-baseline justify-center   w-full  bg-[#f9f3ff]" >
+		<header class="header z-20  sticky top-0 flex flex-col md:flex-row pt-[5px]  items-center  justify-center   w-full  bg-[#f9f3ff]" >
             <div class="logo w-[20%] ml-[30px]">
 				<NuxtImg src="/Kx1rLCnLKU4d4cD7viBNCJUbSbQpkU3HIpEeP4U0.png" />
 			</div>
 			<div class="w-[80%] flex justify-center md:ml-[-10%]">
-				<p class="text-[18px] sm:text-[32px] xl:text-[32px] font-extrabold font-serif text-[#7F5E9F]" >
-					Moments Captured in Time
+				<p class="text-[18px] sm:text-[32px] xl:text-[42px] font-extrabold sm:mt-[20px] text-[#7F5E9F]"  style="font-family: 'Dancing Script';">
+					Premium Lifestyle Brand
 				</p>
 			</div>
 			 
@@ -50,25 +50,26 @@
  
 	const imgs = [
 		{
-			img: "/IMG-20240530-WA0019.jpg",
+			img: "/fashion-runway.jpg",
 			event_name: "Fashion Runway-Dubai",
-			link: "/dubai-fashion-runway",
+			link: "/fashion-runway-dubai",
 		},
 		{
 			img: "/taj-event.jpg",
 			event_name: "Product Launch-Taj Chennai ",
 			link: "/product-launch-taj-chennai",
 		},
+        {
+			img: "/products.jpg",
+			event_name: "Products ",
+			link: "/products",
+		},
 		{
 			img: "/IMG-20240530-WA0021.jpg",
 			event_name: "Dubai International ",
 			link: "/dubai-international",
 		},
-		{
-			img: "/IMG-20240530-WA0025.jpg",
-			event_name: "Dubai International Fashion ",
-			link: "/dubai-international-fashion",
-		},
+		 
 	];
 </script>
 

@@ -6,8 +6,12 @@ export default defineNuxtConfig({
 	},
     app: {
     head: {
-       title:"Relaxaa Gallary"
-    }
+       title:"Relaxaa Gallary",
+       link: [
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet' }
+    ],
+    },
+      
   },
 	devtools: { enabled: false },
 	modules: ["@nuxt/image", "@nuxtjs/tailwindcss"],
