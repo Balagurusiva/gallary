@@ -39,7 +39,7 @@
 <script setup> 
 import taj_imgs from '~/public/product-launch-taj-chennai';
 	const route = useRoute();
-	const imgs = ref([
+	const imgs =[
         "/product-launch-taj-chennai/img1.jpg",
     "/product-launch-taj-chennai/img2.jpg",
     "/product-launch-taj-chennai/img3.jpg",
@@ -52,7 +52,7 @@ import taj_imgs from '~/public/product-launch-taj-chennai';
     "/product-launch-taj-chennai/img10.jpg",
     "/product-launch-taj-chennai/img11.jpg",
     "/product-launch-taj-chennai/img12.jpg",
-    ]);
+    ];
 
 	// if (route.params.slug == "product-launch-taj-chennai") {
 	// 	imgs.value = taj_imgs;
