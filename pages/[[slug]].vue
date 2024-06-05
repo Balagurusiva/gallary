@@ -37,7 +37,7 @@
 </template>
 
 <script setup> 
-
+import taj_imgs from '~/public/product-launch-taj-chennai';
 	const route = useRoute();
 	const imgs = ref();
 

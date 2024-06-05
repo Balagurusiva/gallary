@@ -17,7 +17,7 @@
 
 		<!-- main content -->
 		<main
-			class="mt-[40px] flex flex-col sm:flex-row sm:flex-wrap gap-4 w-[90%] xl:w-[75%]"
+			class="mt-[40px] flex flex-col sm:flex-row sm:flex-wrap justify-center gap-4 w-[90%] xl:w-[75%]"
 		>
 			<template v-for="(image, index) in imgs" :key="index">
 				<NuxtLink :to="image.link" class="flex justify-center">
